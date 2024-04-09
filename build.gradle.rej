@@ -1,0 +1,10 @@
+diff a/build.gradle b/build.gradle	(rejected hunks)
+@@ -32,8 +32,6 @@
+     testCompileOnly 'org.projectlombok:lombok'  //테스트코드에서 lombok 사용 가능하게
+     testAnnotationProcessor 'org.projectlombok:lombok' //테스트코드에서 lombok 사용 가능하게
+ 
+-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+-    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+     developmentOnly 'org.springframework.boot:spring-boot-devtools' // boot용 개발환경
+     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'              // db용 드라이버
+ 

@@ -1,0 +1,15 @@
+diff a/src/main/resources/application.properties b/src/main/resources/application.properties	(rejected hunks)
+@@ -16,13 +16,6 @@
+ # 만약 테이블이 아예 존재하지 않거나, 테이블에 엔티티의 필드에 매핑되는 컬럼이 존재하지 않으면
+ # 예외를 발생시키면서 애플리케이션을 종료한다
+ spring.jpa.hibernate.ddl-auto=update
+-<<<<<<< HEAD
+-# \uC2E4\uC81C jpa\uC758 \uAD6C\uD604\uCCB4\uC778 HiberNate\uAC00 \uB3D9\uC791\uD558\uBA74\uC11C \uBC1C\uC0DD\uD558\uB294 sql\uC744 \uD3EC\uBA67\uD305\uD574\uC11C \uCF58\uC194\uC5D0 \uCD9C\uB825
+-# aws\uC5D0 \uAC8C\uC2DC\uD560 \uC2DC\uC5D0\uB294 true\uB97C false\uB85C \uBC14\uAFB8\uAE30 -> sql \uB85C\uADF8\uAC00 \uB108\uBB34 \uB9CE\uC544\uC9D0
+-spring.jpa.properties.hibernate.format_sql=true
+-# \uCF58\uC194\uC5D0 \uC2E4\uD589\uD55C \uCFFC\uB9AC\uBB38(sql) \uBCF4\uC5EC\uC904 \uAC83\uC778\uC9C0 \uACB0\uC815
+-# \uC598\uB3C4 \uB611\uAC19\uC74C
+-=======
+ # 실제 jpa의 구현체인 HiberNate가 동작하면서 발생하는 sql을 포멧팅해서 콘솔에 출력
+ # aws에 게시할 시에는 true를 false로 바꾸기 -> sql 로그가 너무 많아짐
+ spring.jpa.properties.hibernate.format_sql=true
