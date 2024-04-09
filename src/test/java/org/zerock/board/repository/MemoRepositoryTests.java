@@ -8,7 +8,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.jaxb.SpringDataJaxb;
 import org.springframework.test.annotation.Commit;
 import org.zerock.board.entity.Memo;
 
@@ -123,7 +122,7 @@ public class MemoRepositoryTests {
 
     }
 
-    @Test
+   /* @Test
     public void testQueryMethods(){
         List<Memo> list = memoRepository.findByMnoBetweenOrderByDesc(70L, 80L);
         // 70번부터 80번 사이에 있는 값이 list로 들어가서 값을 출력
@@ -131,7 +130,7 @@ public class MemoRepositoryTests {
         for(Memo memo : list){
             System.out.println(memo);
         }   // 받은 list 객체를 for문을 이용하여 콘솔에 출력
-    }
+    }*/
     
     @Test
     public void testQueryMethodsWithPaging(){

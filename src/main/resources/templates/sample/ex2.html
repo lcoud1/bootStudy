@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DTO 객체 출력해보기</title>
+</head>
+<body>
+<style>
+    .target{
+        background-color: red;
+    }
+</style>
+  <ul>
+    <th:block th:each="dto: ${list}" > <!-- th:each = for문  / 모델에 있는 list 키를 가져오는 역할-->
+        <li th:text="${dto.sno % 5 == 0}?${dto.sno}:${dto.first}"></li>
+      <!-- list 안 쪽 객체를 출력하는 역할 -->
+      </th:block>
+  </ul>
+
+</body>
+</html>

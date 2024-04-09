@@ -29,7 +29,7 @@ public interface MemoRepository extends JpaRepository<Memo, Long> {
     // 매개값으로 받은 from ~ to 까지 select 진행하여 list로 리턴하는 쿼리 메서드
     // 단지 변수명일 뿐
     // from부터 to까지 = ex) 1번부터 6번까지
-    List<Memo> findByMnoBetweenOrderByDesc(Long from, Long to);
+  /*  List<Memo> findByMnoBetweenOrderByDesc(Long from, Long to);*/
 
     // Page<Memo> 리턴 타입 -> 페이징 타입의 객체는 memo
     // 매개값으로 받은 from ~ to 까지 select를 진행하여 페이징 타입으로 리턴하는 쿼리 메서드
@@ -48,9 +48,9 @@ public interface MemoRepository extends JpaRepository<Memo, Long> {
     @Query("UPDATE Memo m SET m.memoText = :memoText WHERE m.mno = :mno")
     int updateMemoText(@Param("mno") Long mno, @Param("memoText") String memoText);
 
-    // 매개값이 객체(빈)으로 들어올 경우
+   /* // 매개값이 객체(빈)으로 들어올 경우
     @Query("UPDATE Memo m SET m.memoText = : #{memoBean.memoText} WHERE m.mno= : #{memoBean.mno}")
-    int updateMemoBean(@Param("memobean") Memo memo);
+    int updateMemoBean(@Param("memobean") Memo memo);*/
 
     // @Query 메서드로 페이징 처리 해보기 -> 리턴 타입이 page<Memo>
     @Query(value = "SELECT m FROM Memo m WHERE m.mno > :mno",
