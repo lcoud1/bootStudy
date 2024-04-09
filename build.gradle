@@ -29,16 +29,13 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-
-    // 테스트 코드에서 lombok 사용가능 설정 코드 = 의존성 주입
-    testCompileOnly 'org.projectlombok:lombok'
-    testAnnotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'  //테스트코드에서 lombok 사용 가능하게
+    testAnnotationProcessor 'org.projectlombok:lombok' //테스트코드에서 lombok 사용 가능하게
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 
-
-    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'  //톰캣제공
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
