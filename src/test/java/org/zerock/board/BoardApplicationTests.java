@@ -1,6 +1,7 @@
 package org.zerock.board;
 
-import lombok.extern.log4j.Log4j2;
+
+import groovy.util.logging.Log4j2;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -11,7 +12,7 @@ class BoardApplicationTests {
     @Test
     void contextLoads() {
         System.out.println(" sout 콘솔 테스트 ");
-        log.info("lombok으로 콘솔 로그 테스트");
+
     }
 
 }
