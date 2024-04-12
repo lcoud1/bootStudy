@@ -14,6 +14,10 @@ public class PageRequestDTO {   // 페이징 요청 처리 DTO
     
     private int page;   // 페이지
     private int size;   // 크기
+
+    private String type; // 타입
+
+    private String keyword; // 키워드
     
     public PageRequestDTO(){   // 페이징 요청치
         this.page = 1;

@@ -5,9 +5,16 @@ import org.zerock.board.dto.PageRequestDTO;
 import org.zerock.board.dto.PageResultDTO;
 import org.zerock.board.entity.Guestbook;
 
+import java.util.Optional;
+
 public interface GuestbookService {
     Long register(GuestbookDTO dto);
     // 방명록을 등록하기 위함
+    GuestbookDTO read(Long gno);
+
+    void remove(Long gno);
+
+    void modify(GuestbookDTO dto);
 
     PageResultDTO<GuestbookDTO, Guestbook> getList(PageRequestDTO requestDTO);
 
@@ -36,6 +43,9 @@ public interface GuestbookService {
                 .build();
         return dto;
     }
+
+
+
 
 
 }
